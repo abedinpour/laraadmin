@@ -465,7 +465,7 @@ class LAFormMaker
                     $out .= '<label for="' . $field_name . '">' . $label . $required_ast . ' :</label>';
                     
                     unset($params['data-rule-maxlength']);
-                    $params['data-placeholder'] = "Select multiple " . str_plural($label);
+                    $params['data-placeholder'] = str_plural($label);
                     unset($params['placeholder']);
                     $params['multiple'] = "true";
                     $params['rel'] = "select2";
