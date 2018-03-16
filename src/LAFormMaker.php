@@ -723,9 +723,10 @@ class LAFormMaker
                 // TODO: Check posibility of comma based pop values.
             }
         } else if(is_array($json)) {
-            foreach($json as $value) {
-                $out[$value] = $value;
-            }
+            //foreach($json as $value) {
+            //    $out[$value] = $value;
+            //}
+            $out = $json;
         }
         return $out;
     }
